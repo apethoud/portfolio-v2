@@ -22,6 +22,8 @@ body {
 nav .ui.menu .item {
   font-family: 'Karla', sans-serif;
   font-weight: 700;
+  font-size: 1.2em;
+  color: rgb(9, 97, 104);
 }
 
 /* HERO SECTION */
@@ -148,6 +150,7 @@ nav .ui.menu .item {
 /* FOOTER */
 
 footer {
+  margin-top: 200px;
   height: 200px;
   background-color: rgb(9, 97, 104);
 }
