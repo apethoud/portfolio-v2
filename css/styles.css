@@ -58,3 +58,83 @@ body {
     visibility: hidden;
   }
 }
+
+/* PORTFOLIO SECTION */
+
+.portfolio-section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.row {
+  width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.triangle-box {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+/* >>>>> TRIANGLE ORIENTATION AND CLIPPING MASKS */
+
+.triangle-A, .triangle-B {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  background-image: url(https://www.blueoceanstrategy.com/wp-content/uploads/2015/01/What-is-blue-ocean-strategy.jpg);
+  background-size: cover;
+}
+
+.triangle-A {
+  clip-path: url(#triangle-up-small);
+}
+
+.triangle-B {
+  clip-path: url(#triangle-down-small);
+}
+
+@media only screen and (min-width: 769px) {
+  .triangle-box {
+    width: 400px;
+    height: 400px;
+  }
+  .triangle-A, .triangle-B {
+    width: 400px;
+    height: 400px;
+  }
+  .triangle-A {
+    clip-path: url(#triangle-up-large);
+  }
+  .triangle-B {
+    clip-path: url(#triangle-down-large);
+  }
+}
+
+/* >>>>> TRIANGLE POSITIONING */
+
+.tri-one {
+  transform: translate(80px, 100px);
+}
+
+.tri-two {
+}
+
+.tri-three {
+  transform: translate(-80px, 100px);
+}
+
+.tri-four {
+  transform: translate(80px, 0px);
+}
+
+.tri-five {
+  transform: translate(0px, 100px);
+}
+
+.tri-six {
+  transform: translate(-80px, 0px);
+}
