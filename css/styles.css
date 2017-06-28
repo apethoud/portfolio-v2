@@ -6,16 +6,22 @@ Colors:
   magenta: rgb(152, 30, 96);
  */
 
-@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
 
 body {
   background-color: rgb(157, 192, 195);
+  font-family: 'Karla', sans-serif;
 }
 
 /* HEADER */
 
 #logo {
   width: 200px;
+}
+
+nav .ui.menu .item {
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
 }
 
 /* HERO SECTION */
@@ -137,4 +143,41 @@ body {
 
 .tri-six {
   transform: translate(-80px, 0px);
+}
+
+/* FOOTER */
+
+footer {
+  height: 200px;
+  background-color: rgb(9, 97, 104);
+}
+
+.social-media, .copyright {
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.social-media i {
+  color: rgb(152, 30, 96);
+  font-size: 2em;
+  margin-top: 11px;
+
+}
+
+.social-media i.fa-linkedin {
+  margin-top: 9px;
+}
+
+.circle-icon-bg {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(157, 192, 195);
+  border-radius: 25px;
+  margin: 0 6px;
+}
+
+.copyright {
+  color: rgb(157, 192, 195);
 }
