@@ -6,16 +6,24 @@ Colors:
   magenta: rgb(152, 30, 96);
  */
 
-@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
 
 body {
   background-color: rgb(157, 192, 195);
+  font-family: 'Karla', sans-serif;
 }
 
 /* HEADER */
 
 #logo {
   width: 200px;
+}
+
+nav .ui.menu .item {
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  color: rgb(9, 97, 104);
 }
 
 /* HERO SECTION */
@@ -44,4 +52,195 @@ body {
 .hero-section p {
   color: rgb(9, 97, 104);
   font-size: 2em;
+}
+
+@media only screen and (max-width: 768px) {
+  #profile-pic {
+    margin: 0 auto;
+    float: none;
+  }
+  .hero-section h1, .hero-section p {
+    text-align: center;
+  }
+  nav .nav-links a {
+    visibility: hidden;
+  }
+}
+
+/* PORTFOLIO SECTION */
+
+#portfolio-section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.row {
+  width: 1200px;
+  height: 500px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.triangle-box {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+
+/* >>>>> TRIANGLE ORIENTATION AND CLIPPING MASKS */
+
+.triangle-A, .triangle-B {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.triangle-A {
+  clip-path: url(#triangle-up-small);
+}
+
+.triangle-B {
+  clip-path: url(#triangle-down-small);
+}
+
+@media only screen and (min-width: 769px) {
+  .triangle-box {
+    width: 400px;
+    height: 400px;
+  }
+  .triangle-A, .triangle-B {
+    width: 400px;
+    height: 400px;
+  }
+  .triangle-A {
+    clip-path: url(#triangle-up-large);
+  }
+  .triangle-B {
+    clip-path: url(#triangle-down-large);
+  }
+}
+
+/* >>>>> TRIANGLE PICTURES */
+
+.tri-one .triangle-A {
+  background-image: url(../images/portfolio/fishy-06.png);
+  background-size: cover;
+}
+
+.tri-two .triangle-B {
+  background-image: url(../images/portfolio/slider-puzzle-05.png);
+  background-size: cover;
+}
+
+.tri-three .triangle-A {
+  background-image: url(../images/portfolio/saturday-sports-01.png);
+  background-size: cover;
+}
+
+.tri-four .triangle-B {
+  background-image: url(../images/portfolio/ap-shards-02.png);
+  background-size: cover;
+}
+
+.tri-five .triangle-A {
+  background-image: url(../images/portfolio/ap-identity-03.png);
+  background-size: cover;
+}
+
+.tri-six .triangle-B {
+  background-image: url(../images/portfolio/pet-store-04.png);
+  background-size: cover;
+}
+
+/* >>>>> TRIANGLE POSITIONING */
+
+.tri-one {
+  transform: translate(80px, 100px);
+}
+
+/*tri-two is not needed*/
+
+.tri-three {
+  transform: translate(-80px, 100px);
+}
+
+.tri-four {
+  transform: translate(80px, 0px);
+}
+
+.tri-five {
+  transform: translate(0px, 100px);
+}
+
+.tri-six {
+  transform: translate(-80px, 0px);
+}
+
+/* CALL TO ACTION */
+
+#portfolio-section #call-to-action {
+  text-align: center;
+  margin-top: 150px;
+}
+
+#portfolio-section #call-to-action h1, #portfolio-section #call-to-action p {
+  font-family: 'Karla', sans-serif;
+  color: rgb(9, 97, 104);
+}
+
+#portfolio-section #call-to-action h1 {
+  margin-top: 50px;
+}
+
+#portfolio-section #call-to-action p {
+  font-size: 1.5em;
+  width: 800px;
+  margin: 0 auto;
+}
+
+#portfolio-section #call-to-action .ui.button {
+  background-color: rgb(152, 30, 96);
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.5em;
+  margin-top: 25px;
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 200px;
+  height: 200px;
+  background-color: rgb(9, 97, 104);
+}
+
+.social-media, .copyright {
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.social-media i {
+  color: rgb(152, 30, 96);
+  font-size: 2em;
+  margin-top: 11px;
+
+}
+
+.social-media i.fa-linkedin {
+  margin-top: 9px;
+}
+
+.circle-icon-bg {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(157, 192, 195);
+  border-radius: 25px;
+  margin: 0 6px;
+}
+
+.copyright {
+  color: rgb(157, 192, 195);
 }
