@@ -69,7 +69,7 @@ nav .ui.menu .item {
 
 /* PORTFOLIO SECTION */
 
-.portfolio-section {
+#portfolio-section {
   margin-top: 100px;
   margin-bottom: 100px;
 }
@@ -174,6 +174,37 @@ nav .ui.menu .item {
 
 .tri-six {
   transform: translate(-80px, 0px);
+}
+
+/* CALL TO ACTION */
+
+#portfolio-section #call-to-action {
+  text-align: center;
+  margin-top: 150px;
+}
+
+#portfolio-section #call-to-action h1, #portfolio-section #call-to-action p {
+  font-family: 'Karla', sans-serif;
+  color: rgb(9, 97, 104);
+}
+
+#portfolio-section #call-to-action h1 {
+  margin-top: 50px;
+}
+
+#portfolio-section #call-to-action p {
+  font-size: 1.5em;
+  width: 800px;
+  margin: 0 auto;
+}
+
+#portfolio-section #call-to-action .ui.button {
+  background-color: rgb(152, 30, 96);
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Karla', sans-serif;
+  font-size: 1.5em;
+  margin-top: 25px;
 }
 
 /* FOOTER */
