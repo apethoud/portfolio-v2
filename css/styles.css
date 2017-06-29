@@ -93,8 +93,6 @@ nav .ui.menu .item {
   width: 200px;
   height: 200px;
   position: relative;
-  background-image: url(https://www.blueoceanstrategy.com/wp-content/uploads/2015/01/What-is-blue-ocean-strategy.jpg);
-  background-size: cover;
 }
 
 .triangle-A {
@@ -122,14 +120,45 @@ nav .ui.menu .item {
   }
 }
 
+/* >>>>> TRIANGLE PICTURES */
+
+.tri-one .triangle-A {
+  background-image: url(../images/portfolio/fishy-06.png);
+  background-size: cover;
+}
+
+.tri-two .triangle-B {
+  background-image: url(../images/portfolio/slider-puzzle-05.png);
+  background-size: cover;
+}
+
+.tri-three .triangle-A {
+  background-image: url(../images/portfolio/saturday-sports-01.png);
+  background-size: cover;
+}
+
+.tri-four .triangle-B {
+  background-image: url(../images/portfolio/ap-shards-02.png);
+  background-size: cover;
+}
+
+.tri-five .triangle-A {
+  background-image: url(../images/portfolio/ap-identity-03.png);
+  background-size: cover;
+}
+
+.tri-six .triangle-B {
+  background-image: url(../images/portfolio/pet-store-04.png);
+  background-size: cover;
+}
+
 /* >>>>> TRIANGLE POSITIONING */
 
 .tri-one {
   transform: translate(80px, 100px);
 }
 
-.tri-two {
-}
+/*tri-two is not needed*/
 
 .tri-three {
   transform: translate(-80px, 100px);
