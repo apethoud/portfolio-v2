@@ -54,7 +54,7 @@ nav .ui.menu .item {
   font-size: 2em;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
   #profile-pic {
     margin: 0 auto;
     float: none;
@@ -70,24 +70,34 @@ nav .ui.menu .item {
 /* PORTFOLIO SECTION */
 
 #portfolio-section {
-  margin-top: 100px;
   margin-bottom: 100px;
 }
 
-.row {
-  width: 1200px;
-  height: 500px;
+.triangles-group {
+  width: 440px;
   margin: 0 auto;
-  margin-bottom: 70px;
+  padding-right: 40px;
 }
+
+@media only screen and (min-width: 1200px) {
+  .triangles-group {
+    width: 1200px;
+    padding-right: 0px;
+  }
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* >>>>> TRIANGLE BOX SIZING */
 
 .triangle-box {
   width: 200px;
   height: 200px;
   float: left;
+  margin-top: 80px;
 }
-
-/* >>>>> TRIANGLE ORIENTATION AND CLIPPING MASKS */
 
 .triangle-A, .triangle-B {
   width: 200px;
@@ -95,110 +105,164 @@ nav .ui.menu .item {
   position: relative;
 }
 
-.triangle-A {
-  clip-path: url(#triangle-up-small);
-}
-
-.triangle-B {
-  clip-path: url(#triangle-down-small);
-}
-
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1200px) {
   .triangle-box {
     width: 400px;
     height: 400px;
+    margin-top: 160px;
   }
   .triangle-A, .triangle-B {
     width: 400px;
     height: 400px;
   }
-  .triangle-A {
-    clip-path: url(#triangle-up-large);
+}
+
+/* >>>>> TRIANGLE ROWS */
+
+.tri-three, .tri-five {
+  clear: both;
+}
+
+@media only screen and (min-width: 1200px) {
+  .tri-three, .tri-five {
+    clear: none;
   }
-  .triangle-B {
-    clip-path: url(#triangle-down-large);
+  .tri-four {
+    clear: both;
   }
 }
 
-/* >>>>> TRIANGLE PICTURES */
+/* >>>>> TRIANGLE PICTURES AND CLIPPING MASKS */
 
 .tri-one .triangle-A {
   background-image: url(../images/portfolio/fishy-06.png);
   background-size: cover;
+  clip-path: url(#triangle-up-small);
 }
 
 .tri-two .triangle-B {
   background-image: url(../images/portfolio/slider-puzzle-05.png);
   background-size: cover;
+  clip-path: url(#triangle-down-small);
 }
 
 .tri-three .triangle-A {
   background-image: url(../images/portfolio/saturday-sports-01.png);
   background-size: cover;
+  clip-path: url(#triangle-down-small);
 }
 
 .tri-four .triangle-B {
   background-image: url(../images/portfolio/ap-shards-02.png);
   background-size: cover;
+  clip-path: url(#triangle-up-small);
 }
 
 .tri-five .triangle-A {
   background-image: url(../images/portfolio/ap-identity-03.png);
   background-size: cover;
+  clip-path: url(#triangle-up-small);
 }
 
 .tri-six .triangle-B {
   background-image: url(../images/portfolio/pet-store-04.png);
   background-size: cover;
+  clip-path: url(#triangle-down-small);
 }
 
-/* >>>>> TRIANGLE POSITIONING */
+@media only screen and (min-width: 1200px) {
+  .tri-one .triangle-A {
+    clip-path: url(#triangle-up-large);
+  }
+  .tri-two .triangle-B {
+    clip-path: url(#triangle-down-large);
+  }
+  .tri-three .triangle-A {
+    clip-path: url(#triangle-up-large);
+  }
+  .tri-four .triangle-B {
+    clip-path: url(#triangle-down-large);
+  }
+  .tri-five .triangle-A {
+    clip-path: url(#triangle-up-large);
+  }
+  .tri-six .triangle-B {
+    clip-path: url(#triangle-down-large);
+  }
+}
+
+
+/* >>>>> TRIANGLE POSITIONING WITHIN THEIR BOXES */
 
 .tri-one {
-  transform: translate(80px, 100px);
+  transform: translate(40px, 50px);
 }
 
 /*tri-two is not needed*/
 
 .tri-three {
-  transform: translate(-80px, 100px);
+  transform: translate(40px, 0px);
 }
 
 .tri-four {
-  transform: translate(80px, 0px);
+  transform: translate(0px, 50px);
 }
 
 .tri-five {
-  transform: translate(0px, 100px);
+  transform: translate(40px, 50px);
 }
 
-.tri-six {
-  transform: translate(-80px, 0px);
+/*tri-six is not needed*/
+
+@media only screen and (min-width: 1200px) {
+  .tri-one {
+    transform: translate(80px, 100px);
+  }
+  /*tri-two is not needed*/
+  .tri-three {
+    transform: translate(-80px, 100px);
+  }
+  .tri-four {
+    transform: translate(80px, 0px);
+  }
+  .tri-five {
+    transform: translate(0px, 100px);
+  }
+  .tri-six {
+    transform: translate(-80px, 0px);
+  }
 }
 
 /* CALL TO ACTION */
 
-#portfolio-section #call-to-action {
+#call-to-action {
   text-align: center;
+  width: 80vw;
+  margin: 0 auto;
   margin-top: 150px;
 }
 
-#portfolio-section #call-to-action h1, #portfolio-section #call-to-action p {
+@media only screen and (min-width: 1200px) {
+  #call-to-action {
+    margin-top: 250px;
+  }
+}
+
+#call-to-action h1, #call-to-action p {
   font-family: 'Karla', sans-serif;
   color: rgb(9, 97, 104);
 }
 
-#portfolio-section #call-to-action h1 {
+#call-to-action h1 {
   margin-top: 50px;
 }
 
-#portfolio-section #call-to-action p {
+#call-to-action p {
   font-size: 1.5em;
-  width: 800px;
   margin: 0 auto;
 }
 
-#portfolio-section #call-to-action .ui.button {
+#call-to-action .ui.button {
   background-color: rgb(152, 30, 96);
   color: white;
   text-transform: uppercase;
