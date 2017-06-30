@@ -16,7 +16,8 @@ body {
 /* HEADER */
 
 #logo {
-  width: 200px;
+  width: 150px;
+  margin-right: 50px;
 }
 
 nav .ui.menu .item {
@@ -26,44 +27,68 @@ nav .ui.menu .item {
   color: rgb(9, 97, 104);
 }
 
+@media only screen and (min-width: 800px) {
+  #logo {
+    width: 200px;
+  }
+}
+
 /* HERO SECTION */
 
 .hero-section {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 #profile-pic {
-  width: 250px;
-  border: 10px solid rgb(152, 30, 96);
-  float: right;
-  margin-right: 50px;
+  width: 125px;
+  border: 5px solid rgb(152, 30, 96);
+  margin: 0 auto;
+  float: none;
 }
 
 .hero-section h1, .hero-section p {
   font-family: 'Karla', sans-serif;
+  text-align: center;
 }
 
 .hero-section h1 {
   color: rgb(152, 30, 96);
-  font-size: 2.5em;
-  margin-top: 15px;
+  font-size: 1.25em;
+  margin-top: 8px;
 }
 
 .hero-section p {
   color: rgb(9, 97, 104);
-  font-size: 2em;
+  font-size: 1em;
 }
 
-@media only screen and (max-width: 1200px) {
+nav .nav-links a {
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 800px) {
+  .hero-section {
+    margin-top: 100px;
+  }
   #profile-pic {
-    margin: 0 auto;
-    float: none;
+    width: 250px;
+    border: 10px solid rgb(152, 30, 96);
+    float: right;
+    margin-right: 50px;
   }
   .hero-section h1, .hero-section p {
-    text-align: center;
+    text-align: left;
+  }
+  .hero-section h1 {
+    font-size: 2.5em;
+    margin-top: 15px;
+  }
+  .hero-section p {
+    color: rgb(9, 97, 104);
+    font-size: 2em;
   }
   nav .nav-links a {
-    visibility: hidden;
+    visibility: visible;
   }
 }
 
@@ -74,15 +99,27 @@ nav .ui.menu .item {
 }
 
 .triangles-group {
-  width: 440px;
+  width: 220px;
   margin: 0 auto;
-  padding-right: 40px;
+  padding-right: 20px;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 799px) {
+  .triangles-group {
+    width: 440px;
+    margin: 0 auto;
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1199px) {
+
 }
 
 @media only screen and (min-width: 1200px) {
   .triangles-group {
     width: 1200px;
-    padding-right: 0px;
+    padding-right: 0;
   }
 }
 
@@ -93,16 +130,34 @@ nav .ui.menu .item {
 /* >>>>> TRIANGLE BOX SIZING */
 
 .triangle-box {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   float: left;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 
 .triangle-A, .triangle-B {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   position: relative;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 799px) {
+  .triangle-box {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-top: 80px;
+  }
+  .triangle-A, .triangle-B {
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1199px) {
+
 }
 
 @media only screen and (min-width: 1200px) {
@@ -123,6 +178,16 @@ nav .ui.menu .item {
   clear: both;
 }
 
+@media only screen and (min-width: 400px) and (max-width: 799px) {
+  .tri-three, .tri-five {
+    clear: both;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1199px) {
+
+}
+
 @media only screen and (min-width: 1200px) {
   .tri-three, .tri-five {
     clear: none;
@@ -137,82 +202,100 @@ nav .ui.menu .item {
 .tri-one .triangle-A {
   background-image: url(../images/portfolio/fishy-06.png);
   background-size: cover;
-  clip-path: url(#triangle-up-small);
 }
 
 .tri-two .triangle-B {
   background-image: url(../images/portfolio/slider-puzzle-05.png);
   background-size: cover;
-  clip-path: url(#triangle-down-small);
 }
 
 .tri-three .triangle-A {
-  background-image: url(../images/portfolio/saturday-sports-01.png);
+  background-image: url(../images/portfolio/saturday-sports-01_down.png);
   background-size: cover;
-  clip-path: url(#triangle-down-small);
 }
 
 .tri-four .triangle-B {
-  background-image: url(../images/portfolio/ap-shards-02.png);
+  background-image: url(../images/portfolio/ap-shards-02_up.png);
   background-size: cover;
-  clip-path: url(#triangle-up-small);
+}
+
+@media only screen and (min-width: 400px) and (max-width: 799px) {
+/*same as above*/
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1199px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .tri-three .triangle-A {
+    background-image: url(../images/portfolio/saturday-sports-01_up.png);
+    background-size: cover;
+  }
+
+  .tri-four .triangle-B {
+    background-image: url(../images/portfolio/ap-shards-02_down.png);
+    background-size: cover;
+  }
 }
 
 .tri-five .triangle-A {
   background-image: url(../images/portfolio/ap-identity-03.png);
   background-size: cover;
-  clip-path: url(#triangle-up-small);
 }
 
 .tri-six .triangle-B {
   background-image: url(../images/portfolio/pet-store-04.png);
   background-size: cover;
-  clip-path: url(#triangle-down-small);
 }
-
-@media only screen and (min-width: 1200px) {
-  .tri-one .triangle-A {
-    clip-path: url(#triangle-up-large);
-  }
-  .tri-two .triangle-B {
-    clip-path: url(#triangle-down-large);
-  }
-  .tri-three .triangle-A {
-    clip-path: url(#triangle-up-large);
-  }
-  .tri-four .triangle-B {
-    clip-path: url(#triangle-down-large);
-  }
-  .tri-five .triangle-A {
-    clip-path: url(#triangle-up-large);
-  }
-  .tri-six .triangle-B {
-    clip-path: url(#triangle-down-large);
-  }
-}
-
 
 /* >>>>> TRIANGLE POSITIONING WITHIN THEIR BOXES */
 
 .tri-one {
-  transform: translate(40px, 50px);
+  transform: translate(20px, 25px);
 }
 
 /*tri-two is not needed*/
 
 .tri-three {
-  transform: translate(40px, 0px);
+  transform: translate(20px, 0px);
 }
 
 .tri-four {
-  transform: translate(0px, 50px);
+  transform: translate(0px, 25px);
 }
 
 .tri-five {
-  transform: translate(40px, 50px);
+  transform: translate(20px, 25px);
 }
 
 /*tri-six is not needed*/
+
+@media only screen and (min-width: 400px) and (max-width: 799px) {
+  .tri-one {
+    transform: translate(40px, 50px);
+  }
+
+  /*tri-two is not needed*/
+
+  .tri-three {
+    transform: translate(40px, 0px);
+  }
+
+  .tri-four {
+    transform: translate(0px, 50px);
+  }
+
+  .tri-five {
+    transform: translate(40px, 50px);
+  }
+
+  /*tri-six is not needed*/
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1199px) {
+
+}
 
 @media only screen and (min-width: 1200px) {
   .tri-one {
@@ -239,11 +322,20 @@ nav .ui.menu .item {
   text-align: center;
   width: 80vw;
   margin: 0 auto;
-  margin-top: 150px;
+  margin-top: 70px;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 799px) {
+/*same as above*/
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1199px) {
+
 }
 
 @media only screen and (min-width: 1200px) {
   #call-to-action {
+    width: 50vw;
     margin-top: 250px;
   }
 }
@@ -253,13 +345,33 @@ nav .ui.menu .item {
   color: rgb(9, 97, 104);
 }
 
-#call-to-action h1 {
-  margin-top: 50px;
+#call-to-action p {
+  font-size: 1em;
+  margin: 0 auto;
 }
 
-#call-to-action p {
-  font-size: 1.5em;
-  margin: 0 auto;
+#call-to-action h1 {
+  margin-top: 50px;
+  font-size: 1.2em;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 799px) {
+/*same as above*/
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1199px) {
+
+}
+
+@media only screen and (min-width: 1200px) {
+  #call-to-action p {
+    font-size: 1.5em;
+    margin: 0 auto;
+  }
+  #call-to-action h1 {
+    margin-top: 50px;
+    font-size: 2em;
+  }
 }
 
 #call-to-action .ui.button {
@@ -267,14 +379,20 @@ nav .ui.menu .item {
   color: white;
   text-transform: uppercase;
   font-family: 'Karla', sans-serif;
-  font-size: 1.5em;
+  font-size: 1em;
   margin-top: 25px;
+}
+
+@media only screen and (min-width: 800px) {
+  #call-to-action .ui.button {
+    font-size: 1.5em;
+  }
 }
 
 /* FOOTER */
 
 footer {
-  margin-top: 200px;
+  margin-top: 100px;
   height: 200px;
   background-color: rgb(9, 97, 104);
 }
@@ -289,7 +407,6 @@ footer {
   color: rgb(152, 30, 96);
   font-size: 2em;
   margin-top: 11px;
-
 }
 
 .social-media i.fa-linkedin {
@@ -302,9 +419,15 @@ footer {
   height: 50px;
   background-color: rgb(157, 192, 195);
   border-radius: 25px;
-  margin: 0 6px;
+  margin: 6px;
 }
 
 .copyright {
   color: rgb(157, 192, 195);
+}
+
+@media only screen and (min-width: 800px) {
+  footer {
+    margin-top: 200px;
+  }
 }
