@@ -27,7 +27,7 @@ nav .ui.menu .item {
   color: rgb(9, 97, 104);
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 880px) {
   #logo {
     width: 200px;
   }
@@ -36,11 +36,13 @@ nav .ui.menu .item {
 /* HERO SECTION */
 
 .hero-section {
+  margin: 0 auto;
   margin-top: 50px;
+  width: 90vw;
 }
 
 #profile-pic {
-  width: 125px;
+  width: 175px;
   border: 5px solid rgb(152, 30, 96);
   margin: 0 auto;
   float: none;
@@ -53,20 +55,20 @@ nav .ui.menu .item {
 
 .hero-section h1 {
   color: rgb(152, 30, 96);
-  font-size: 1.25em;
+  font-size: 1.5em;
   margin-top: 8px;
 }
 
 .hero-section p {
   color: rgb(9, 97, 104);
-  font-size: 1em;
+  font-size: 1.25em;
 }
 
 nav .nav-links a {
   visibility: hidden;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 880px) {
   .hero-section {
     margin-top: 100px;
   }
@@ -99,12 +101,12 @@ nav .nav-links a {
 }
 
 .triangles-group {
-  width: 220px;
+  width: 275px;
   margin: 0 auto;
-  padding-right: 20px;
+  padding-right: 25px;
 }
 
-@media only screen and (min-width: 400px) and (max-width: 799px) {
+@media only screen and (min-width: 440px) and (max-width: 879px) {
   .triangles-group {
     width: 440px;
     margin: 0 auto;
@@ -112,11 +114,11 @@ nav .nav-links a {
   }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1199px) {
+@media only screen and (min-width: 880px) and (max-width: 1319px) {
 
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1320px) {
   .triangles-group {
     width: 1200px;
     padding-right: 0;
@@ -130,19 +132,19 @@ nav .nav-links a {
 /* >>>>> TRIANGLE BOX SIZING */
 
 .triangle-box {
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
   float: left;
   margin-top: 40px;
 }
 
 .triangle-A, .triangle-B {
-  width: 100px;
-  height: 100px;
+  width: 125px;
+  height: 125px;
   position: relative;
 }
 
-@media only screen and (min-width: 400px) and (max-width: 799px) {
+@media only screen and (min-width: 440px) and (max-width: 879px) {
   .triangle-box {
     width: 200px;
     height: 200px;
@@ -156,11 +158,11 @@ nav .nav-links a {
   }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1199px) {
+@media only screen and (min-width: 880px) and (max-width: 1319px) {
 
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1320px) {
   .triangle-box {
     width: 400px;
     height: 400px;
@@ -178,17 +180,17 @@ nav .nav-links a {
   clear: both;
 }
 
-@media only screen and (min-width: 400px) and (max-width: 799px) {
+@media only screen and (min-width: 440px) and (max-width: 879px) {
   .tri-three, .tri-five {
     clear: both;
   }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1199px) {
+@media only screen and (min-width: 880px) and (max-width: 1319px) {
 
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1320px) {
   .tri-three, .tri-five {
     clear: none;
   }
@@ -219,15 +221,15 @@ nav .nav-links a {
   background-size: cover;
 }
 
-@media only screen and (min-width: 400px) and (max-width: 799px) {
+@media only screen and (min-width: 440px) and (max-width: 879px) {
 /*same as above*/
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1199px) {
+@media only screen and (min-width: 880px) and (max-width: 1319px) {
 
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1320px) {
   .tri-three .triangle-A {
     background-image: url(../images/portfolio/saturday-sports-01_up.png);
     background-size: cover;
@@ -252,26 +254,26 @@ nav .nav-links a {
 /* >>>>> TRIANGLE POSITIONING WITHIN THEIR BOXES */
 
 .tri-one {
-  transform: translate(20px, 25px);
+  transform: translate(25px, 31px); /* originally 20px, 25px */
 }
 
 /*tri-two is not needed*/
 
 .tri-three {
-  transform: translate(20px, 0px);
+  transform: translate(25px, 0px);
 }
 
 .tri-four {
-  transform: translate(0px, 25px);
+  transform: translate(0px, 31px);
 }
 
 .tri-five {
-  transform: translate(20px, 25px);
+  transform: translate(25px, 31px);
 }
 
 /*tri-six is not needed*/
 
-@media only screen and (min-width: 400px) and (max-width: 799px) {
+@media only screen and (min-width: 440px) and (max-width: 879px) {
   .tri-one {
     transform: translate(40px, 50px);
   }
@@ -293,11 +295,11 @@ nav .nav-links a {
   /*tri-six is not needed*/
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1199px) {
+@media only screen and (min-width: 880px) and (max-width: 1319px) {
 
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1320px) {
   .tri-one {
     transform: translate(80px, 100px);
   }
@@ -320,20 +322,24 @@ nav .nav-links a {
 
 #call-to-action {
   text-align: center;
-  width: 80vw;
+  width: 90vw;
   margin: 0 auto;
   margin-top: 70px;
 }
 
-@media only screen and (min-width: 400px) and (max-width: 799px) {
-/*same as above*/
+@media only screen and (min-width: 440px) and (max-width: 879px) {
+  #call-to-action {
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 120px;
+  }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1199px) {
+@media only screen and (min-width: 880px) and (max-width: 1319px) {
 
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1320px) {
   #call-to-action {
     width: 50vw;
     margin-top: 250px;
@@ -346,24 +352,24 @@ nav .nav-links a {
 }
 
 #call-to-action p {
-  font-size: 1em;
+  font-size: 1.25em;
   margin: 0 auto;
 }
 
 #call-to-action h1 {
   margin-top: 50px;
-  font-size: 1.2em;
+  font-size: 1.25em;
 }
 
-@media only screen and (min-width: 400px) and (max-width: 799px) {
+@media only screen and (min-width: 440px) and (max-width: 879px) {
 /*same as above*/
 }
 
-@media only screen and (min-width: 800px) and (max-width: 1199px) {
+@media only screen and (min-width: 880px) and (max-width: 1319px) {
 
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1320px) {
   #call-to-action p {
     font-size: 1.5em;
     margin: 0 auto;
@@ -383,7 +389,7 @@ nav .nav-links a {
   margin-top: 25px;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 880px) {
   #call-to-action .ui.button {
     font-size: 1.5em;
   }
@@ -426,7 +432,7 @@ footer {
   color: rgb(157, 192, 195);
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 880px) {
   footer {
     margin-top: 200px;
   }
