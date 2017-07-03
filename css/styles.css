@@ -399,7 +399,8 @@ nav .nav-links a {
 
 footer {
   margin-top: 100px;
-  height: 200px;
+  padding-bottom: 20px;
+  /*height: 200px;*/
   background-color: rgb(9, 97, 104);
 }
 
