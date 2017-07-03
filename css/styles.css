@@ -135,7 +135,7 @@ nav .nav-links a {
   width: 125px;
   height: 125px;
   float: left;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .triangle-A, .triangle-B {
@@ -399,7 +399,8 @@ nav .nav-links a {
 
 footer {
   margin-top: 100px;
-  height: 200px;
+  padding-bottom: 20px;
+  /*height: 200px;*/
   background-color: rgb(9, 97, 104);
 }
 
