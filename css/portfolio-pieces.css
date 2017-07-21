@@ -1,0 +1,14 @@
+h1, h2, h3, p {
+  text-align: center;
+}
+
+.creative-process {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 60vw;
+}
+
+.creative-process img {
+  display: block;
+  margin: 0 auto;
+}
