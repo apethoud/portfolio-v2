@@ -20,7 +20,7 @@ h1, h2, h3, p {
   margin-top: 50px;
 }
 
-.creative-process h2 {
+.creative-process .section-header {
   color: rgb(9, 97, 104);
   text-transform: uppercase;
   font-size: 1.25em;
@@ -28,7 +28,7 @@ h1, h2, h3, p {
   letter-spacing: 0.1em;
 }
 
-.creative-process h1 {
+.creative-process .work-title {
   color: rgb(152, 30, 96);
   font-size: 2em;
 }
@@ -39,31 +39,31 @@ h1, h2, h3, p {
   width: 100%;
 }
 
-.creative-process h3 {
+.creative-process .step-header {
   color: rgb(152, 30, 96);
   font-size: 1.65em;
 }
 
-.creative-process p {
+.creative-process .description {
   margin-top: 3vh;
   font-size: 1.15em;
 }
 
-@media only screen and (min-width: 440px) and (max-width: 879px) {
-
-}
-
 @media only screen and (min-width: 880px) and (max-width: 1319px) {
-
+  .creative-process img {
+  width: 60vw;
+  }
 }
 
 @media only screen and (min-width: 1320px) {
-
+  .creative-process img {
+  width: 40vw;
+  }
 }
 
 /* INTRO SECTION */
 
-.intro p {
+.intro .description {
   font-size: 1.5em;
 }
 
