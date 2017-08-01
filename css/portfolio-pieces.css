@@ -6,7 +6,7 @@ Colors:
   magenta: rgb(152, 30, 96);
  */
 
-@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
+@import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700');
 
 /* CREATIVE PROCESS GLOBALS */
 
@@ -41,20 +41,47 @@ h1, h2, h3, p {
 
 .creative-process h3 {
   color: rgb(152, 30, 96);
+  font-size: 1.65em;
 }
 
 .creative-process p {
   margin-top: 3vh;
+  font-size: 1.15em;
+}
+
+@media only screen and (min-width: 440px) and (max-width: 879px) {
+
+}
+
+@media only screen and (min-width: 880px) and (max-width: 1319px) {
+
+}
+
+@media only screen and (min-width: 1320px) {
+
 }
 
 /* INTRO SECTION */
 
 .intro p {
-  font-size: 1.25em;
+  font-size: 1.5em;
 }
 
 /* PROCESS STEPS SECTION */
 
 .process-steps {
   margin-top: 50px;
+}
+
+/* BACK LINK */
+
+.back-link {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.back-link a {
+  color: rgb(152, 30, 96);
+  font-style: italic;
+  font-size: 1.15em;
 }
