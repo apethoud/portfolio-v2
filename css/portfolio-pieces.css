@@ -23,14 +23,9 @@ h1, h2, h3, p {
 .creative-process .section-header {
   color: rgb(9, 97, 104);
   text-transform: uppercase;
-  font-size: 1.25em;
+  font-size: 1em;
   font-weight: 400;
   letter-spacing: 0.1em;
-}
-
-.creative-process .work-title {
-  color: rgb(152, 30, 96);
-  font-size: 2em;
 }
 
 .creative-process img {
@@ -39,38 +34,65 @@ h1, h2, h3, p {
   width: 100%;
 }
 
-.creative-process .step-header {
-  color: rgb(152, 30, 96);
-  font-size: 1.65em;
-}
-
 .creative-process .description {
   margin-top: 3vh;
   font-size: 1.15em;
 }
 
 @media only screen and (min-width: 880px) and (max-width: 1319px) {
-  .creative-process img {
-  width: 60vw;
+    .creative-process {
+    width: 60vw;
+  }
+  .creative-process .section-header {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 1.5em;
+  }
+  .creative-process .description {
+    font-size: 1.15em;
   }
 }
 
 @media only screen and (min-width: 1320px) {
-  .creative-process img {
-  width: 40vw;
+    .creative-process {
+    width: 40vw;
+  }
+  .creative-process .section-header {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    font-size: 1.5em;
+  }
+  .creative-process .description {
+    font-size: 1.15em;
   }
 }
 
 /* INTRO SECTION */
 
-.intro .description {
+.intro .work-title {
+  color: rgb(152, 30, 96);
   font-size: 1.5em;
+}
+
+@media only screen and (min-width: 880px) {
+  .intro .work-title {
+    font-size: 2em;
+  }
+
+  .intro .description {
+    font-size: 1.5em;
+  }
 }
 
 /* PROCESS STEPS SECTION */
 
 .process-steps {
   margin-top: 50px;
+}
+
+.process-steps .step-header {
+  color: rgb(152, 30, 96);
+  font-size: 1.65em;
 }
 
 /* BACK LINK */
