@@ -1,9 +1,12 @@
 /* NOTES
 
 Colors:
-  light blue: rgb(157, 192, 195);
-  dark blue: rgb(9, 97, 104);
-  magenta: rgb(152, 30, 96);
+  rich magenta: rgb(152, 30, 96);
+  light magenta: rgb(154, 60, 117);
+  light blue: rgb(65, 61, 156);
+  light green: rgb(61, 156, 126);
+  white value: rgb(228, 228, 242);
+  black value: rgb(1, 1, 26);
  */
 
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700');
@@ -15,6 +18,10 @@ body {
 
 /* HEADER */
 
+header {
+  background-color: rgb(1, 1, 26);
+}
+
 #logo {
   width: 150px;
   margin-right: 50px;
@@ -24,7 +31,7 @@ nav .ui.menu .item {
   font-family: 'Karla', sans-serif;
   font-weight: 700;
   font-size: 1.2em;
-  color: rgb(9, 97, 104);
+  color: rgb(228, 228, 242);
 }
 
 @media only screen and (min-width: 880px) {
