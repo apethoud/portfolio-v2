@@ -9,42 +9,435 @@ Colors:
   magenta: rgb(152, 30, 96);
  */
 
-@import url('https://fonts.googleapis.com/css?family=Karla');
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700');
 
 body {
   background-color: rgb(157, 192, 195);
+  font-family: 'Karla', sans-serif;
 }
 
 /* HEADER */
 
 #logo {
-  width: 200px;
+  width: 150px;
+  margin-right: 50px;
+}
+
+nav .ui.menu .item {
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  color: rgb(9, 97, 104);
+}
+
+@media only screen and (min-width: 880px) {
+  #logo {
+    width: 200px;
+  }
 }
 
 /* HERO SECTION */
 
 .hero-section {
-  margin-top: 100px;
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 90vw;
 }
 
 #profile-pic {
-  width: 250px;
-  border: 10px solid rgb(152, 30, 96);
-  float: right;
-  margin-right: 50px;
+  width: 175px;
+  border: 5px solid rgb(152, 30, 96);
+  margin: 0 auto;
+  float: none;
 }
 
 .hero-section h1, .hero-section p {
   font-family: 'Karla', sans-serif;
+  text-align: center;
 }
 
 .hero-section h1 {
   color: rgb(152, 30, 96);
-  font-size: 2.5em;
-  margin-top: 15px;
+  font-size: 1.5em;
+  margin-top: 8px;
 }
 
 .hero-section p {
   color: rgb(9, 97, 104);
+  font-size: 1.25em;
+}
+
+nav .nav-links a {
+  visibility: hidden;
+}
+
+@media only screen and (min-width: 880px) {
+  .hero-section {
+    margin-top: 100px;
+  }
+  #profile-pic {
+    width: 250px;
+    border: 10px solid rgb(152, 30, 96);
+    float: right;
+    margin-right: 50px;
+  }
+  .hero-section h1, .hero-section p {
+    text-align: left;
+  }
+  .hero-section h1 {
+    font-size: 2.5em;
+    margin-top: 15px;
+  }
+  .hero-section p {
+    color: rgb(9, 97, 104);
+    font-size: 2em;
+  }
+  nav .nav-links a {
+    visibility: visible;
+  }
+}
+
+/* PORTFOLIO SECTION */
+
+#portfolio-section {
+  margin-bottom: 100px;
+}
+
+.triangles-group {
+  width: 275px;
+  margin: 0 auto;
+  padding-right: 25px;
+}
+
+@media only screen and (min-width: 440px) and (max-width: 879px) {
+  .triangles-group {
+    width: 440px;
+    margin: 0 auto;
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (min-width: 880px) and (max-width: 1319px) {
+
+}
+
+@media only screen and (min-width: 1320px) {
+  .triangles-group {
+    width: 1200px;
+    padding-right: 0;
+  }
+}
+
+.clearfix {
+  clear: both;
+}
+
+/* >>>>> TRIANGLE BOX SIZING */
+
+.triangle-box {
+  width: 125px;
+  height: 125px;
+  float: left;
+  margin-top: 50px;
+}
+
+.triangle-A, .triangle-B {
+  width: 125px;
+  height: 125px;
+  position: relative;
+}
+
+@media only screen and (min-width: 440px) and (max-width: 879px) {
+  .triangle-box {
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin-top: 80px;
+  }
+  .triangle-A, .triangle-B {
+    width: 200px;
+    height: 200px;
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 880px) and (max-width: 1319px) {
+
+}
+
+@media only screen and (min-width: 1320px) {
+  .triangle-box {
+    width: 400px;
+    height: 400px;
+    margin-top: 160px;
+  }
+  .triangle-A, .triangle-B {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* >>>>> TRIANGLE ROWS */
+
+.tri-three, .tri-five {
+  clear: both;
+}
+
+@media only screen and (min-width: 440px) and (max-width: 879px) {
+  .tri-three, .tri-five {
+    clear: both;
+  }
+}
+
+@media only screen and (min-width: 880px) and (max-width: 1319px) {
+
+}
+
+@media only screen and (min-width: 1320px) {
+  .tri-three, .tri-five {
+    clear: none;
+  }
+  .tri-four {
+    clear: both;
+  }
+}
+
+/* >>>>> TRIANGLE PICTURES AND CLIPPING MASKS */
+
+.tri-one .triangle-A {
+  background-image: url(../images/portfolio/fishy-06.png);
+  background-size: cover;
+}
+
+.tri-two .triangle-B {
+  background-image: url(../images/portfolio/slider-puzzle-05.png);
+  background-size: cover;
+}
+
+.tri-three .triangle-A {
+  background-image: url(../images/portfolio/saturday-sports-01_down.png);
+  background-size: cover;
+}
+
+.tri-four .triangle-B {
+  background-image: url(../images/portfolio/ap-shards-02_up.png);
+  background-size: cover;
+}
+
+@media only screen and (min-width: 440px) and (max-width: 879px) {
+/*same as above*/
+}
+
+@media only screen and (min-width: 880px) and (max-width: 1319px) {
+
+}
+
+@media only screen and (min-width: 1320px) {
+  .tri-three .triangle-A {
+    background-image: url(../images/portfolio/saturday-sports-01_up.png);
+    background-size: cover;
+  }
+
+  .tri-four .triangle-B {
+    background-image: url(../images/portfolio/ap-shards-02_down.png);
+    background-size: cover;
+  }
+}
+
+.tri-five .triangle-A {
+  background-image: url(../images/portfolio/ap-identity-03.png);
+  background-size: cover;
+}
+
+.tri-six .triangle-B {
+  background-image: url(../images/portfolio/pet-store-04.png);
+  background-size: cover;
+}
+
+/* >>>>> TRIANGLE POSITIONING WITHIN THEIR BOXES */
+
+.tri-one {
+  transform: translate(25px, 31px); /* originally 20px, 25px */
+}
+
+/*tri-two is not needed*/
+
+.tri-three {
+  transform: translate(25px, 0px);
+}
+
+.tri-four {
+  transform: translate(0px, 31px);
+}
+
+.tri-five {
+  transform: translate(25px, 31px);
+}
+
+/*tri-six is not needed*/
+
+@media only screen and (min-width: 440px) and (max-width: 879px) {
+  .tri-one {
+    transform: translate(40px, 50px);
+  }
+
+  /*tri-two is not needed*/
+
+  .tri-three {
+    transform: translate(40px, 0px);
+  }
+
+  .tri-four {
+    transform: translate(0px, 50px);
+  }
+
+  .tri-five {
+    transform: translate(40px, 50px);
+  }
+
+  /*tri-six is not needed*/
+}
+
+@media only screen and (min-width: 880px) and (max-width: 1319px) {
+
+}
+
+@media only screen and (min-width: 1320px) {
+  .tri-one {
+    transform: translate(80px, 100px);
+  }
+  /*tri-two is not needed*/
+  .tri-three {
+    transform: translate(-80px, 100px);
+  }
+  .tri-four {
+    transform: translate(80px, 0px);
+  }
+  .tri-five {
+    transform: translate(0px, 100px);
+  }
+  .tri-six {
+    transform: translate(-80px, 0px);
+  }
+}
+
+/* CALL TO ACTION */
+
+#call-to-action {
+  text-align: center;
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 70px;
+}
+
+@media only screen and (min-width: 440px) and (max-width: 879px) {
+  #call-to-action {
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 120px;
+  }
+}
+
+@media only screen and (min-width: 880px) and (max-width: 1319px) {
+
+}
+
+@media only screen and (min-width: 1320px) {
+  #call-to-action {
+    width: 50vw;
+    margin-top: 250px;
+  }
+}
+
+#call-to-action h1, #call-to-action p {
+  font-family: 'Karla', sans-serif;
+  color: rgb(9, 97, 104);
+}
+
+#call-to-action p {
+  font-size: 1.25em;
+  margin: 0 auto;
+}
+
+#call-to-action h1 {
+  margin-top: 50px;
+  font-size: 1.25em;
+}
+
+@media only screen and (min-width: 440px) and (max-width: 879px) {
+/*same as above*/
+}
+
+@media only screen and (min-width: 880px) and (max-width: 1319px) {
+
+}
+
+@media only screen and (min-width: 1320px) {
+  #call-to-action p {
+    font-size: 1.5em;
+    margin: 0 auto;
+  }
+  #call-to-action h1 {
+    margin-top: 50px;
+    font-size: 2em;
+  }
+}
+
+#call-to-action .ui.button {
+  background-color: rgb(152, 30, 96);
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Karla', sans-serif;
+  font-size: 1em;
+  margin-top: 25px;
+}
+
+@media only screen and (min-width: 880px) {
+  #call-to-action .ui.button {
+    font-size: 1.5em;
+  }
+}
+
+/* FOOTER */
+
+footer {
+  margin-top: 100px;
+  padding-bottom: 20px;
+  /*height: 200px;*/
+  background-color: rgb(9, 97, 104);
+}
+
+.social-media, .copyright {
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.social-media i {
+  color: rgb(152, 30, 96);
   font-size: 2em;
+  margin-top: 11px;
+}
+
+.social-media i.fa-linkedin {
+  margin-top: 9px;
+}
+
+.circle-icon-bg {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(157, 192, 195);
+  border-radius: 25px;
+  margin: 6px;
+}
+
+.copyright {
+  color: rgb(157, 192, 195);
+}
+
+@media only screen and (min-width: 880px) {
+  footer {
+    margin-top: 200px;
+  }
 }
