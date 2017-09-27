@@ -1,7 +1,18 @@
 /* NOTES
 
-New colors:
-  light mint: rgb(199, 245, 196);
+New magenta shades:
+  magenta: rgb(152, 30, 96);
+  dark magenta: rgb(36, 4, 21);
+  blue: rgb(31, 32, 165);
+  dark blue: rgb(3, 3, 36);
+  light blue for text: rgb(227, 227, 255);
+
+New triad colors:
+  light sky blue: rgb(209, 252, 255);
+  sky blue: rgb(12, 216, 230);
+  dark sky: rgb(10, 97, 103);
+  really dark sky: rgb(5, 28, 31);
+  really light sky: rgb(204, 229, 232);
 
 Colors:
   light blue: rgb(157, 192, 195);
@@ -12,7 +23,7 @@ Colors:
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700');
 
 body {
-  background-color: rgb(157, 192, 195);
+  background-color: rgb(3, 3, 36);
   font-family: 'Karla', sans-serif;
 }
 
@@ -27,7 +38,7 @@ nav .ui.menu .item {
   font-family: 'Karla', sans-serif;
   font-weight: 700;
   font-size: 1.2em;
-  color: rgb(9, 97, 104);
+  color: rgb(227, 227, 255);
 }
 
 @media only screen and (min-width: 880px) {
@@ -46,7 +57,7 @@ nav .ui.menu .item {
 
 #profile-pic {
   width: 175px;
-  border: 5px solid rgb(152, 30, 96);
+  /* border: 5px solid rgb(227, 227, 255); */
   margin: 0 auto;
   float: none;
 }
@@ -57,13 +68,13 @@ nav .ui.menu .item {
 }
 
 .hero-section h1 {
-  color: rgb(152, 30, 96);
+  color: rgb(227, 227, 255);
   font-size: 1.5em;
   margin-top: 8px;
 }
 
 .hero-section p {
-  color: rgb(9, 97, 104);
+  color: rgb(227, 227, 255);
   font-size: 1.25em;
 }
 
@@ -89,7 +100,7 @@ nav .nav-links a {
     margin-top: 15px;
   }
   .hero-section p {
-    color: rgb(9, 97, 104);
+    color: rgb(227, 227, 255);
     font-size: 2em;
   }
   nav .nav-links a {
@@ -351,7 +362,7 @@ nav .nav-links a {
 
 #call-to-action h1, #call-to-action p {
   font-family: 'Karla', sans-serif;
-  color: rgb(9, 97, 104);
+  color: rgb(227, 227, 255);
 }
 
 #call-to-action p {
@@ -404,7 +415,7 @@ footer {
   margin-top: 100px;
   padding-bottom: 20px;
   /*height: 200px;*/
-  background-color: rgb(9, 97, 104);
+  background-color: rgb(3, 3, 36);
 }
 
 .social-media, .copyright {
@@ -414,7 +425,7 @@ footer {
 }
 
 .social-media i {
-  color: rgb(152, 30, 96);
+  color: rgb(227, 227, 255);
   font-size: 2em;
   margin-top: 11px;
 }
@@ -427,13 +438,13 @@ footer {
   display: inline-block;
   width: 50px;
   height: 50px;
-  background-color: rgb(157, 192, 195);
+  background-color: rgb(152, 30, 96);
   border-radius: 25px;
   margin: 6px;
 }
 
 .copyright {
-  color: rgb(157, 192, 195);
+  color: rgb(227, 227, 255);
 }
 
 @media only screen and (min-width: 880px) {
