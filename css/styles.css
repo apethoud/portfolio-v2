@@ -81,6 +81,15 @@ nav .ui.menu .item {
   font-size: 1.25em;
 }
 
+.hero-section p.thought-text {
+  color: rgb(152, 30, 96);
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 700;
+}
+
 nav .nav-links a {
   visibility: hidden;
 }
