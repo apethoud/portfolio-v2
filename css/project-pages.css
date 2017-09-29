@@ -1,9 +1,9 @@
-.project-header h1, .project-steps h2 {
-  color: rgb(152, 30, 96);
+h1, h2, p {
+  text-align: center;
 }
 
-.project-header h1, .project-header h2 {
-  text-align: center;
+.project-header h1, .project-steps h2 {
+  color: rgb(152, 30, 96);
 }
 
 .project-header h2 {
@@ -11,8 +11,8 @@
   font-style: italic;
 }
 
-.project-section h2 {
-  text-align: center;
+.step {
+  margin-top: 80px;
 }
 
 @media only screen and (min-width: 880px) {
@@ -21,12 +21,13 @@
     font-size: 42px;
   }
   .ui.stackable.centered.grid.project-steps {
-    margin-top: 80px;
+    margin-top: 60px;
   }
   .project-steps h2 {
-    text-align: left;
+    font-size: 36px;
   }
   .project-steps p {
     font-size: 16px;
+    margin-bottom: 40px;
   }
 }
