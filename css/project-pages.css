@@ -1,0 +1,32 @@
+.project-header h1, .project-steps h2 {
+  color: rgb(152, 30, 96);
+}
+
+.project-header h1, .project-header h2 {
+  text-align: center;
+}
+
+.project-header h2 {
+  font-weight: 600;
+  font-style: italic;
+}
+
+.project-section h2 {
+  text-align: center;
+}
+
+@media only screen and (min-width: 880px) {
+  .project-header h1 {
+    margin-top: 40px;
+    font-size: 42px;
+  }
+  .ui.stackable.centered.grid.project-steps {
+    margin-top: 80px;
+  }
+  .project-steps h2 {
+    text-align: left;
+  }
+  .project-steps p {
+    font-size: 16px;
+  }
+}
