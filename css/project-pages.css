@@ -2,6 +2,10 @@ h1, h2, p {
   text-align: center;
 }
 
+p, ul {
+  font-size: 2em;
+}
+
 .project-header h1, .project-steps h2 {
   color: rgb(152, 30, 96);
 }
@@ -30,8 +34,7 @@ h1, h2, p {
     font-size: 16px;
     margin-bottom: 40px;
   }
-  .step ul {
-    width:400px;
-    margin: 0 auto;
+  .project-steps ul {
+    font-size: 16px;
   }
 }
